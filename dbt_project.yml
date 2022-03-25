@@ -21,4 +21,4 @@ models:
   usrwtch_takehome:
     detect:
       materialized: table
-      +schema: detect
+      schema: detect
