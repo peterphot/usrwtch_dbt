@@ -38,4 +38,27 @@ models:
           - name: params_distance
           - name: params_city
           - name: params_race_id 
+    
+    - name: interaction_vectors
+      description: "generating interaction vectors row by row"
+      columns:
+          - name: session_id
+          - name: source_ip
+          - name: doc_path
+          - name: user_event
+          - name: n
+          - name: n_session_events
+          - name: prop_interaction
+
+    - name: array_vectors
+      description: "aggregate interaction vectors"
+      columns:
+          - name: session_id 
+          - name: source_ip
+          - name: event_name_vector
+          - name: prop_vector
+          - name: v_vector
+
+
+      
             
