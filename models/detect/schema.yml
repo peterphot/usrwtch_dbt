@@ -1,0 +1,41 @@
+
+version: 2
+
+sources:
+  - name: public
+    tables:
+      - name: jitsu_events
+
+models:
+    - name: user_events_cleaned
+      description: "cleaning and filtering jitsu events"
+      columns:
+          - name: source_ip
+          - name: utc_time
+          - name: local_time
+          - name: url
+          - name: doc_path
+          - name: user_event
+          - name: params_horse_id
+          - name: params_country
+          - name: params_race_class
+          - name: params_distance
+          - name: params_city
+          - name: params_race_id
+        
+    - name: fact_user_sessions
+      description: "cleaning and filtering jitsu events"
+      columns:
+          - name: session_id
+          - name: source_ip
+          - name: local_time
+          - name: url
+          - name: doc_path
+          - name: user_event
+          - name: params_horse_id
+          - name: params_country
+          - name: params_race_class
+          - name: params_distance
+          - name: params_city
+          - name: params_race_id 
+            
